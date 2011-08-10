@@ -1,0 +1,27 @@
+Lecture on Web Application Security
+===================================
+
+Across a few examples, this lecture illustrates the most frequent attack types on web applications, and the techniques to mitigate them.
+
+Setup
+-----
+
+Create a virtualhost for the application. Note that `mod_security` must be disabled for the examples to work.
+
+    <VirtualHost *:80>
+      ServerName security
+      DocumentRoot "/path/to/security/web"
+      DirectoryIndex index.php
+      <Directory "/path/to/security/web">
+        AllowOverride All
+        Allow from All
+      </Directory>
+    
+      <IfModule security2_module>
+        SecRuleEngine Off
+      </IfModule>
+    
+    </VirtualHost>
+
+Update your hosts file, restart the server, then navigate to http://security, and you're done.
+
