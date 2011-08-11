@@ -46,8 +46,8 @@ setcookie("IP", $_SERVER['REMOTE_ADDR'], $expire);
 	</script>
 </head>
 <body>
-<h1>The Unfab Four</h1>
-<p>This is a demo of the four dominant attack types targeting web applications:</p>
+<h1>Web Applications Security</h1>
+<p>Most of the attacks on web applications are of the following four types ('The Unfab Four')<sup><a href="#ref1">[1]</a></sup>:</p>
 <ul>
 <li><a href="directory_traversal.php">Directory Traversal (DT)</a>,</li>
 <li><a href="cross_site_scripting.php">Cross-Site Scripting (XSS)</a>,</li>
@@ -56,7 +56,8 @@ setcookie("IP", $_SERVER['REMOTE_ADDR'], $expire);
 <li>Other common attack types include CSRF, Directory Indexing, Full Path disclosure, etc.</li>
 </ul>
 <div id="chart_div"></div>
-<p><a href="conclusion.php">Conclusion</a>,</p>
+<p><a href="conclusion.php">Conclusion</a></p>
+<p name="ref1">[1] Source: <a href="http://www.imperva.com/download.asp?id=114">2011 Web Application Attack Report by Imperva</a></p>
 </body>
 </html>
 

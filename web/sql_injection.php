@@ -20,7 +20,7 @@ if (isset($_GET['name'])) {
 <p><a href="index.php">&lt;= back</a></p>
 
 <h1>SQL Injection (SQLI)</h1>
-<p>SQL injection is a code injection technique that exploits a security vulnerability occurring in the database layer of an application (like queries). The vulnerability is present when user input is either incorrectly filtered for string literal escape characters embedded in SQL statements or user input is not strongly typed and thereby unexpectedly executed.</p>
+<p>SQL injection is a code injection technique that exploits a security vulnerability occurring in the database layer of an application (like queries)<sup><a href="#ref1">[1]</a></sup>. The vulnerability is present when user input is either incorrectly filtered for string literal escape characters embedded in SQL statements or user input is not strongly typed and thereby unexpectedly executed.</p>
 <p>It happens from using poorly designed query language interpreters.</p>
 
 <h2>Example</h2>
@@ -37,14 +37,17 @@ if (isset($_GET['name'])) {
 <input type="submit"/>
 </form>
 
-<h2><a href="#" onclick="document.getElementById('mitigation').style.display='block';return fale;">Mitigation</a></h2>
+<h2><a href="#" onclick="document.getElementById('mitigation').style.display='block';return false;">Mitigation</a></h2>
 <ul id="mitigation" style="display:none">
 	<li>Parameter binding (with type)</li>
+	<li>Use an ORM</li>
 	<li>Input validation</li>
 	<li>Principle of least privilege</li>
 	<li>Keep database structure and identifiers secret</li>
 	<li>Web Application Firewall (mod_security)</li>
 </ul>
+
+<p name="ref1">[1] Source: <a href="http://en.wikipedia.org/wiki/SQL_injection">SQL Injection on Wikipedia</a></p>
 
 </body>
 </html>

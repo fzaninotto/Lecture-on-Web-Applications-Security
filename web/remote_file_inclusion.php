@@ -6,7 +6,7 @@
 <p><a href="index.php">&lt;= back</a></p>
 
 <h1>Remote File Inclusion (RFI)</h1>
-<p>Remote File Inclusion allows an attacker to include a remote file, usually through a script on the web server. The vulnerability occurs due to the use of user-supplied input without proper validation. This can lead to something as minimal as outputting the contents of the file, but depending on the severity, to list a few it can lead to:</p>
+<p>Remote File Inclusion allows an attacker to include a remote file, usually through a script on the web server. The vulnerability occurs due to the use of user-supplied input without proper validation<sup><a href="#ref1">[1]</a></sup>. This can lead to something as minimal as outputting the contents of the file, but depending on the severity, to list a few it can lead to:</p>
 <ul>
 <li>Code execution on the web server;</li>
 <li>Code execution on the client-side such as JavaScript which can lead to other attacks such as cross site scripting (XSS)</li>
@@ -34,7 +34,7 @@ if (isset($_FILES["file"])) {
 </form>
 </body>
 
-<h2><a href="#" onclick="document.getElementById('mitigation').style.display='block';return fale;">Mitigation</a></h2>
+<h2><a href="#" onclick="document.getElementById('mitigation').style.display='block';return false;">Mitigation</a></h2>
 <ul id="mitigation" style="display:none">
 	<li>allow_url_include and allow_url_fopen must be turned off</li>
 	<li>Input validation</li>
@@ -42,6 +42,8 @@ if (isset($_FILES["file"])) {
 	<li>Renaming file uploads</li>
 	<li>Web Application Firewall (mod_security)</li>
 </ul>
+
+<p name="ref1">[1] Source: <a href="http://en.wikipedia.org/wiki/Remote_file_inclusion">Remote file inclusion on Wikipedia</a></p>
 
 </html>
 

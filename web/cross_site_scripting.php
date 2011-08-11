@@ -27,8 +27,8 @@ if (isset($_POST['name'])) {
 <p><a href="index.php">&lt;= back</a></p>
 
 <h1>Cross-Site Scripting (XSS)</h1>
-<p>Cross-site scripting (XSS) enables attackers to inject client-side script into web pages viewed by other users. A cross-site scripting vulnerability may be used by attackers to bypass access controls such as the same origin policy.</p>
-<p>Cross-site scripting carried out on websites accounted for roughly 80% of all security vulnerabilities documented by Symantec as of 2007</p>
+<p>Cross-site scripting (XSS) enables attackers to inject client-side script into web pages viewed by other users<sup><a href="#ref1">[1]</a></sup>. A cross-site scripting vulnerability may be used by attackers to bypass access controls such as the same origin policy.</p>
+<p>Cross-site scripting carried out on websites accounted for roughly 80% of all security vulnerabilities documented by Symantec as of 2007.</p>
 
 <h2>Example</h2>
 <p>Click on one of the following links to display the content of the resource:</p>
@@ -45,7 +45,7 @@ if (isset($_POST['name'])) {
 	<input type="submit"/>
 </form>
 
-<h2><a href="#" onclick="document.getElementById('mitigation').style.display='block';return fale;">Mitigation</a></h2>
+<h2><a href="#" onclick="document.getElementById('mitigation').style.display='block';return false;">Mitigation</a></h2>
 <ul id="mitigation" style="display:none">
 	<li>Output escaping</li>
 	<li>Input filtering</li>
@@ -53,6 +53,8 @@ if (isset($_POST['name'])) {
 	<li>disabling scripts</li>
 	<li>Web Application Firewall (mod_security)</li>
 </ul>
+
+<p name="ref1">[1] Source: <a href="http://en.wikipedia.org/wiki/Cross-site_scripting">Cross-site scripting on Wikipedia</a></p>
 
 </body>
 </html>

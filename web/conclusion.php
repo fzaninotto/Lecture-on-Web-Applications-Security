@@ -12,6 +12,7 @@ setcookie("IP", $_SERVER['REMOTE_ADDR'], $expire);
 <p>Web application security is a serious matter, and developers must know all about it.</p>
 <ul>
 	<li>A firewall is not enough to keep you safe.</li>
+	<li>mod_security is necessary, but not sufficient.</li>
 	<li>Attackers know vulnerabilities, so developers must know them, too.</li>
 	<li>Hacking is a lucrative business. Attackers will keep coming.</li>
 	<li>Attackers use robots to find exploits. If a vulnerability exists, it will be found.</li>

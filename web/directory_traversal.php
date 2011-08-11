@@ -5,7 +5,7 @@
 <body>
 <p><a href="index.php">&lt;= back</a></p>
 <h1>Directory Traversal</h1>
-<p>A directory traversal (or path traversal) consists in exploiting insufficient security validation / sanitization of user-supplied input file names, so that characters representing "traverse to parent directory" are passed through to the file APIs.</p>
+<p>A directory traversal (or path traversal) consists in exploiting insufficient security validation / sanitization of user-supplied input file names, so that characters representing "traverse to parent directory" are passed through to the file APIs<sup><a href="#ref1">[1]</a></sup>.</p>
 <p>The goal of this attack is to order an application to access a computer file that is not intended to be accessible. This attack exploits a lack of security (the software is acting exactly as it is supposed to) as opposed to exploiting a bug in the code.</p>
 
 <h2>Example</h2>
@@ -22,7 +22,7 @@
 </pre></code>
 <?php endif; ?>
 
-<h2><a href="#" onclick="document.getElementById('mitigation').style.display='block';return fale;">Mitigation</a></h2>
+<h2><a href="#" onclick="document.getElementById('mitigation').style.display='block';return false;">Mitigation</a></h2>
 <ul id="mitigation" style="display:none">
 	<li>Input validation (detect "../" and variants)</li>
 	<li>Filename conversion (basename)</li>
@@ -32,6 +32,8 @@
 	<li>Chroot jails</li>
 	<li>Web Application Firewall (mod_security)</li>
 </ul>
+
+<p name="ref1">[1] Source: <a href="http://en.wikipedia.org/wiki/Directory_traversal">Directory Traversal on Wikipedia</a></p>
 
 </body>
 </html>
