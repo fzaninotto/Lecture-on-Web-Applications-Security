@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>Directory Traversal</title>
+	<link href="style.css" rel="stylesheet">
 </head>
 <body>
 <p><a href="index.php">&lt;= back</a></p>

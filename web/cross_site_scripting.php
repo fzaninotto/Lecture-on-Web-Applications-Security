@@ -22,6 +22,7 @@ if (isset($_POST['name'])) {
 <html>
 <head>
 	<title>Cross-Site Scripting (XSS)</title>
+	<link href="style.css" rel="stylesheet">
 </head>
 <body>
 <p><a href="index.php">&lt;= back</a></p>

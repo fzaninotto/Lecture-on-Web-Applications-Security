@@ -15,6 +15,7 @@ if (isset($_GET['name'])) {
 <html>
 <head>
 	<title>SQL Injection (SQLI)</title>
+	<link href="style.css" rel="stylesheet">
 </head>
 <body>
 <p><a href="index.php">&lt;= back</a></p>

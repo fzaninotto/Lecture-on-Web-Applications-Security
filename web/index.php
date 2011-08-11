@@ -4,7 +4,8 @@ setcookie("IP", $_SERVER['REMOTE_ADDR'], $expire);
 ?>
 <html>
 <head>
-	<title>The Unfab Four</title>
+	<title>Web Applications Security</title>
+	<link href="style.css" rel="stylesheet">
 	<!--Load the AJAX API-->
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script type="text/javascript">

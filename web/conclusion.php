@@ -5,6 +5,7 @@ setcookie("IP", $_SERVER['REMOTE_ADDR'], $expire);
 <html>
 <head>
 	<title>The Unfab Four</title>
+	<link href="style.css" rel="stylesheet">
 </head>
 <body>
 <p><a href="index.php">&lt;= back</a></p>
